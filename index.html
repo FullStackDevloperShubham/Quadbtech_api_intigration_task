@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast | Using JavaScript</title>
+    <!-- Material UI CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mui/0.10.2/css/mui.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mui/0.10.2/js/mui.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="mui--text-headline mui--text-dark-secondary">Weather Forecast</h1>
+        <div class="input-group">
+            <input type="text" id="cityInput" placeholder="Enter city name"
+                class="mui-textfield mui-textfield--float-label" />
+            <button onclick="getWeather(event)" class="mui-btn mui-btn--raised mui-btn--primary">Get Weather</button>
+        </div>
+
+        <div id="weatherData" class="mui-panel mui--text-center">
+            <h3 id="CityName" class="mui--text-title mui--text-dark">City Name</h3>
+            <h5 id="Country" class="mui--text-subhead mui--text-dark">Country</h5>
+
+            <h2 id="Temperature" class="mui--text-headline mui--text-accent">0°C</h2>
+            <p id="Description" class="mui--text-caption mui--text-dark-hint">Weather Description</p>
+
+            <div class="mui-divider"></div>
+
+            <p id="FeelLike" class="mui--text-body1">Feels Like: --°C</p>
+            <p id="Humidity" class="mui--text-body1">Humidity: 0%</p>
+            <p id="WindSpeed" class="mui--text-body1">Wind Speed: -- km/h</p>
+        </div>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
